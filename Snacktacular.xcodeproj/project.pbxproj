@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E0EFA21201E589700CEB154 /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EFA20201E589700CEB154 /* SpotDetailViewController.swift */; };
+		3E0EFA23201E624A00CEB154 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0EFA22201E624A00CEB154 /* UIView+addBorder.swift */; };
+		3E2DC3DB2049F35B0086EEF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E2DC3DA2049F35B0086EEF9 /* GoogleService-Info.plist */; };
+		3E385EE8205022E700C52520 /* SnackUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E385EE7205022E700C52520 /* SnackUser.swift */; };
+		3E385EEA2050A07600C52520 /* SpotsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E385EE92050A07600C52520 /* SpotsListTableViewCell.swift */; };
+		3E41F9FF2051CFC20028AF69 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E41F9FE2051CFC20028AF69 /* UserListTableViewCell.swift */; };
+		3E52004A204A5BE500A93AF6 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E520049204A5BE500A93AF6 /* ReviewTableViewController.swift */; };
+		3E67F6202050CBBA00915CD8 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E67F61F2050CBBA00915CD8 /* UsersListViewController.swift */; };
+		3E67F6222050CBD600915CD8 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E67F6212050CBD600915CD8 /* UserProfileViewController.swift */; };
+		3E67F6242050CCEB00915CD8 /* SnackUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E67F6232050CCEB00915CD8 /* SnackUsers.swift */; };
+		3E8770DB204E0EFA005E509D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8770DA204E0EFA005E509D /* Photo.swift */; };
+		3E8770DD204E1499005E509D /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8770DC204E1499005E509D /* Photos.swift */; };
+		3E8770DF204E1A67005E509D /* SpotDetailPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8770DE204E1A67005E509D /* SpotDetailPhotoCollectionViewCell.swift */; };
+		3E934C3F204B99FC00734911 /* SpotDetailReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E934C3E204B99FC00734911 /* SpotDetailReviewsTableViewCell.swift */; };
+		3ECBF783201D627500A1BC1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBF782201D627500A1BC1D /* AppDelegate.swift */; };
+		3ECBF785201D627500A1BC1D /* SpotsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBF784201D627500A1BC1D /* SpotsListViewController.swift */; };
+		3ECBF788201D627500A1BC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ECBF786201D627500A1BC1D /* Main.storyboard */; };
+		3ECBF78A201D627500A1BC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECBF789201D627500A1BC1D /* Assets.xcassets */; };
+		3ECBF78D201D627500A1BC1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ECBF78B201D627500A1BC1D /* LaunchScreen.storyboard */; };
+		3ECBF795201D723A00A1BC1D /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBF794201D723A00A1BC1D /* Spot.swift */; };
+		3EE59EAA204F84C6008D53D1 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE59EA9204F84C6008D53D1 /* PhotoTableViewController.swift */; };
+		3EF67AA6204A5474003AB17F /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF67AA5204A5474003AB17F /* Reviews.swift */; };
+		3EF67AA8204A55E0003AB17F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF67AA7204A55E0003AB17F /* Review.swift */; };
+		3EF7E1C42050A48D00CF3C66 /* Double+roundTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF7E1C32050A48D00CF3C66 /* Double+roundTo.swift */; };
+		3EFB1E64204386EA0058C6D8 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB1E63204386EA0058C6D8 /* Spots.swift */; };
+		565A063F91579C24A49EF71A /* Pods_Snacktacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F46130F6A2F32252957BB7 /* Pods_Snacktacular.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C920C1DCB18D4CE65F3733F /* Pods-Snacktacular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snacktacular/Pods-Snacktacular.debug.xcconfig"; sourceTree = "<group>"; };
+		2DF0BA0DB73D3F79A2652055 /* Pods-Snacktacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snacktacular/Pods-Snacktacular.release.xcconfig"; sourceTree = "<group>"; };
+		3E0EFA20201E589700CEB154 /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
+		3E0EFA22201E624A00CEB154 /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
+		3E2DC3DA2049F35B0086EEF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3E385EE7205022E700C52520 /* SnackUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUser.swift; sourceTree = "<group>"; };
+		3E385EE92050A07600C52520 /* SpotsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsListTableViewCell.swift; sourceTree = "<group>"; };
+		3E41F9FE2051CFC20028AF69 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		3E520049204A5BE500A93AF6 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
+		3E67F61F2050CBBA00915CD8 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		3E67F6212050CBD600915CD8 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		3E67F6232050CCEB00915CD8 /* SnackUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackUsers.swift; sourceTree = "<group>"; };
+		3E8770DA204E0EFA005E509D /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3E8770DC204E1499005E509D /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		3E8770DE204E1A67005E509D /* SpotDetailPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E934C3E204B99FC00734911 /* SpotDetailReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		3ECBF77F201D627500A1BC1D /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ECBF782201D627500A1BC1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3ECBF784201D627500A1BC1D /* SpotsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsListViewController.swift; sourceTree = "<group>"; };
+		3ECBF787201D627500A1BC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3ECBF789201D627500A1BC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3ECBF78C201D627500A1BC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3ECBF78E201D627500A1BC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ECBF794201D723A00A1BC1D /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		3EE59EA9204F84C6008D53D1 /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		3EF67AA5204A5474003AB17F /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		3EF67AA7204A55E0003AB17F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		3EF7E1C32050A48D00CF3C66 /* Double+roundTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+roundTo.swift"; sourceTree = "<group>"; };
+		3EFB1E63204386EA0058C6D8 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
+		86F46130F6A2F32252957BB7 /* Pods_Snacktacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snacktacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ECBF77C201D627500A1BC1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565A063F91579C24A49EF71A /* Pods_Snacktacular.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3ECBF776201D627500A1BC1D = {
+			isa = PBXGroup;
+			children = (
+				3ECBF781201D627500A1BC1D /* Snacktacular */,
+				3ECBF780201D627500A1BC1D /* Products */,
+				8EAA3F375F6ABBAA84411C67 /* Pods */,
+				6FC3ECBAB6B6E1C9BC2DBD4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3ECBF780201D627500A1BC1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ECBF77F201D627500A1BC1D /* Snacktacular.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ECBF781201D627500A1BC1D /* Snacktacular */ = {
+			isa = PBXGroup;
+			children = (
+				3ECBF782201D627500A1BC1D /* AppDelegate.swift */,
+				3EFB1E63204386EA0058C6D8 /* Spots.swift */,
+				3ECBF794201D723A00A1BC1D /* Spot.swift */,
+				3EF67AA5204A5474003AB17F /* Reviews.swift */,
+				3EF67AA7204A55E0003AB17F /* Review.swift */,
+				3E8770DC204E1499005E509D /* Photos.swift */,
+				3E8770DA204E0EFA005E509D /* Photo.swift */,
+				3E67F6232050CCEB00915CD8 /* SnackUsers.swift */,
+				3E385EE7205022E700C52520 /* SnackUser.swift */,
+				3ECBF784201D627500A1BC1D /* SpotsListViewController.swift */,
+				3E385EE92050A07600C52520 /* SpotsListTableViewCell.swift */,
+				3E0EFA20201E589700CEB154 /* SpotDetailViewController.swift */,
+				3E934C3E204B99FC00734911 /* SpotDetailReviewsTableViewCell.swift */,
+				3E8770DE204E1A67005E509D /* SpotDetailPhotoCollectionViewCell.swift */,
+				3E520049204A5BE500A93AF6 /* ReviewTableViewController.swift */,
+				3EE59EA9204F84C6008D53D1 /* PhotoTableViewController.swift */,
+				3E67F61F2050CBBA00915CD8 /* UsersListViewController.swift */,
+				3E41F9FE2051CFC20028AF69 /* UserListTableViewCell.swift */,
+				3E67F6212050CBD600915CD8 /* UserProfileViewController.swift */,
+				3ECBF786201D627500A1BC1D /* Main.storyboard */,
+				3E0EFA22201E624A00CEB154 /* UIView+addBorder.swift */,
+				3EF7E1C32050A48D00CF3C66 /* Double+roundTo.swift */,
+				3ECBF789201D627500A1BC1D /* Assets.xcassets */,
+				3ECBF78B201D627500A1BC1D /* LaunchScreen.storyboard */,
+				3ECBF78E201D627500A1BC1D /* Info.plist */,
+				3E2DC3DA2049F35B0086EEF9 /* GoogleService-Info.plist */,
+			);
+			path = Snacktacular;
+			sourceTree = "<group>";
+		};
+		6FC3ECBAB6B6E1C9BC2DBD4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86F46130F6A2F32252957BB7 /* Pods_Snacktacular.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EAA3F375F6ABBAA84411C67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C920C1DCB18D4CE65F3733F /* Pods-Snacktacular.debug.xcconfig */,
+				2DF0BA0DB73D3F79A2652055 /* Pods-Snacktacular.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ECBF77E201D627500A1BC1D /* Snacktacular */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ECBF791201D627500A1BC1D /* Build configuration list for PBXNativeTarget "Snacktacular" */;
+			buildPhases = (
+				23CB961FC8C9002474A32462 /* [CP] Check Pods Manifest.lock */,
+				3ECBF77B201D627500A1BC1D /* Sources */,
+				3ECBF77C201D627500A1BC1D /* Frameworks */,
+				3ECBF77D201D627500A1BC1D /* Resources */,
+				985629429779431290EC7A4D /* [CP] Embed Pods Frameworks */,
+				1A5A2993FED841D27E9FB3B1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snacktacular;
+			productName = Snacktacular;
+			productReference = 3ECBF77F201D627500A1BC1D /* Snacktacular.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ECBF777201D627500A1BC1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "John Gallaugher";
+				TargetAttributes = {
+					3ECBF77E201D627500A1BC1D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3ECBF77A201D627500A1BC1D /* Build configuration list for PBXProject "Snacktacular" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3ECBF776201D627500A1BC1D;
+			productRefGroup = 3ECBF780201D627500A1BC1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ECBF77E201D627500A1BC1D /* Snacktacular */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ECBF77D201D627500A1BC1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ECBF78D201D627500A1BC1D /* LaunchScreen.storyboard in Resources */,
+				3E2DC3DB2049F35B0086EEF9 /* GoogleService-Info.plist in Resources */,
+				3ECBF78A201D627500A1BC1D /* Assets.xcassets in Resources */,
+				3ECBF788201D627500A1BC1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A5A2993FED841D27E9FB3B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Snacktacular/Pods-Snacktacular-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snacktacular/Pods-Snacktacular-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23CB961FC8C9002474A32462 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Snacktacular-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		985629429779431290EC7A4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Snacktacular/Pods-Snacktacular-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snacktacular/Pods-Snacktacular-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ECBF77B201D627500A1BC1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E8770DD204E1499005E509D /* Photos.swift in Sources */,
+				3E934C3F204B99FC00734911 /* SpotDetailReviewsTableViewCell.swift in Sources */,
+				3E67F6222050CBD600915CD8 /* UserProfileViewController.swift in Sources */,
+				3ECBF785201D627500A1BC1D /* SpotsListViewController.swift in Sources */,
+				3E52004A204A5BE500A93AF6 /* ReviewTableViewController.swift in Sources */,
+				3EF67AA8204A55E0003AB17F /* Review.swift in Sources */,
+				3E67F6202050CBBA00915CD8 /* UsersListViewController.swift in Sources */,
+				3EFB1E64204386EA0058C6D8 /* Spots.swift in Sources */,
+				3EF67AA6204A5474003AB17F /* Reviews.swift in Sources */,
+				3E8770DF204E1A67005E509D /* SpotDetailPhotoCollectionViewCell.swift in Sources */,
+				3EE59EAA204F84C6008D53D1 /* PhotoTableViewController.swift in Sources */,
+				3E0EFA21201E589700CEB154 /* SpotDetailViewController.swift in Sources */,
+				3E8770DB204E0EFA005E509D /* Photo.swift in Sources */,
+				3E41F9FF2051CFC20028AF69 /* UserListTableViewCell.swift in Sources */,
+				3E67F6242050CCEB00915CD8 /* SnackUsers.swift in Sources */,
+				3E385EE8205022E700C52520 /* SnackUser.swift in Sources */,
+				3ECBF795201D723A00A1BC1D /* Spot.swift in Sources */,
+				3ECBF783201D627500A1BC1D /* AppDelegate.swift in Sources */,
+				3E0EFA23201E624A00CEB154 /* UIView+addBorder.swift in Sources */,
+				3EF7E1C42050A48D00CF3C66 /* Double+roundTo.swift in Sources */,
+				3E385EEA2050A07600C52520 /* SpotsListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3ECBF786201D627500A1BC1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ECBF787201D627500A1BC1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3ECBF78B201D627500A1BC1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ECBF78C201D627500A1BC1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ECBF78F201D627500A1BC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3ECBF790201D627500A1BC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3ECBF792201D627500A1BC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C920C1DCB18D4CE65F3733F /* Pods-Snacktacular.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9937BJYLPH;
+				INFOPLIST_FILE = Snacktacular/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gallaugher.Snacktacular;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3ECBF793201D627500A1BC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF0BA0DB73D3F79A2652055 /* Pods-Snacktacular.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9937BJYLPH;
+				INFOPLIST_FILE = Snacktacular/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gallaugher.Snacktacular;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ECBF77A201D627500A1BC1D /* Build configuration list for PBXProject "Snacktacular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ECBF78F201D627500A1BC1D /* Debug */,
+				3ECBF790201D627500A1BC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ECBF791201D627500A1BC1D /* Build configuration list for PBXNativeTarget "Snacktacular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ECBF792201D627500A1BC1D /* Debug */,
+				3ECBF793201D627500A1BC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ECBF777201D627500A1BC1D /* Project object */;
+}
